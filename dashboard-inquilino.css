@@ -41,14 +41,23 @@ body {
 }
 
 .header h1 {
-    font-size: 18px;
-    margin-bottom: 6px;
+    font-size: 20px;
+    margin-bottom: 2px;
 }
 
 .header p {
     font-size: 14px;
     color: #94a3b8;
 }
+
+/* STATUS PAGAMENTO */
+.header .rent-status {
+    margin-top: 10px;
+    font-size: 15px;  
+    font-weight: 600;
+}
+
+
 
 /* CONTEÚDO FIXO */
 .content {
