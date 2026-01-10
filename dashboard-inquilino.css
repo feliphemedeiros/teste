@@ -93,7 +93,7 @@ body {
 }
 
 .action-btn:active {
-    transform: scale(0.97);
+    transform: scale(0.98);
 }
 
 /* BOTÃO PRINCIPAL */
@@ -109,13 +109,11 @@ body {
     justify-content: center;
     gap: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transition: transform 0.12s ease-out;
+    will-change: transform;
 }
 
-.btn-pay:active {
-    transform: scale(0.91);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
-}
+
 
 /* GRID DOS BOTÕES */
 .grid-secondary {
@@ -134,4 +132,3 @@ body {
     justify-content: center;
     gap: 8px;
 }
-
