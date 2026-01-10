@@ -1,32 +1,14 @@
-const token = localStorage.getItem("token");
+const statusEl = document.getElementById("rent-status");
 
-if (!token) {
-  window.location.href = "login.html";
-}
+// exemplo vindo do banco
+const rentStatus = "em_dia";
 
-fetch("http://SEU_BACKEND/api/admin/pagamentos", {
-  headers: {
-    "Authorization": "Bearer " + token
-  }
-})
-.then(res => res.json())
-.then(dados => {
-  const tbody = document.getElementById("lista");
+statusEl.classList.remove("status-ok", "status-late", "status-warning");
 
-  dados.forEach(p => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${p.inquilino}</td>
-      <td>${p.casa}</td>
-      <td>${p.mes}</td>
-      <td>R$ ${p.valor}</td>
-      <td class="${p.status}">${p.status}</td>
-    `;
-    tbody.appendChild(tr);
-  });
-});
-
-function logout() {
-  localStorage.removeItem("token");
-  window.location.href = "login.html";
+if (rentStatus === "em_dia") {
+    statusEl.textContent = "🟢 Aluguel em dias";
+    statusEl.classList.add("status-ok");
+} else if (rentStatus === "atrasado") {
+    statusEl.textContent = "🔴 Aluguel atrasado";
+    statusEl.classList.add("status-late");
 }
