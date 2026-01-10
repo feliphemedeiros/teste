@@ -103,7 +103,7 @@ body {
     font-size: 25px;
     font-weight: 600;
     background-color: #38bdf8;
-    color: #e5e7eb;
+    color: #020617;
     border-radius: 18px;
     display: flex;
     align-items: center;
@@ -133,3 +133,4 @@ body {
     justify-content: center;
     gap: 8px;
 }
+
