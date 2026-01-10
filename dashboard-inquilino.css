@@ -113,7 +113,7 @@ body {
 }
 
 .btn-pay:active {
-    transform: scale(0.97);
+    transform: scale(0.91);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
 }
 
@@ -134,3 +134,4 @@ body {
     justify-content: center;
     gap: 8px;
 }
+
