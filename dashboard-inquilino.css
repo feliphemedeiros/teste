@@ -91,6 +91,7 @@ body {
     background-color: #1e293b;
     color: #e5e7eb;
     transition: background-color 0.2s ease;
+    text-decoration: none;
 }
 
 .action-btn:active {
@@ -133,4 +134,5 @@ body {
     justify-content: center;
     gap: 8px;
 }
+
 
