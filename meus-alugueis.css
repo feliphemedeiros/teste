@@ -19,6 +19,12 @@ body {
 
 /* HEADER */
 .page-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #020617; /* mesmo fundo do app */
+    border-bottom: 1px solid #1e293b;
+
     display: flex;
     align-items: center;
     gap: 12px;
@@ -104,3 +110,4 @@ body {
 .pay-btn:active {
     transform: scale(0.96);
 }
+
