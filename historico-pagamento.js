@@ -48,5 +48,6 @@ document.querySelectorAll(".receipt-btn").forEach(btn => {
 
 /* BOTÃO VOLTAR */
 document.getElementById("btnVoltar").addEventListener("click", () => {
-    window.location.href = "dashboard-inquilino.html";
+    window.location.href = "./dashboard-inquilino.html";
 });
+
