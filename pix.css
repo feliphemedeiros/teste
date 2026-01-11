@@ -1,0 +1,187 @@
+body {
+    background-color: #020617;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100dvh;
+    overflow: hidden; /* 🔑 remove rolagem */
+}
+
+.app {
+    width: 360px;
+    height: 100dvh;        /* 🔑 altura fixa */
+    display: flex;
+    flex-direction: column;
+    color: #e5e7eb;
+    overflow: hidden;     /* 🔑 sem scroll */
+}
+
+.app-content {
+    padding: 16px;
+}
+
+
+
+/* HEADER PADRÃO */
+
+
+.app-header {
+    /* HEADER FIXO */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 16px;
+    border-bottom: 1px solid #1e293b;
+    background-color: #020617;
+}
+
+/* BOTÃO VOLTAR */
+.back-btn {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+}
+
+/* TÍTULO */
+.header-title {
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+/* linha*/
+
+
+
+
+
+/* CARD PIX */
+.pix-card {
+    background-color: #1e293b;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* BLOCO PRINCIPAL */
+.pix-main {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.pix-main h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 6px 0;   /* ⬅ remove margem de cima */
+}
+
+
+.pix-main .reference {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.pix-main .due {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #38bdf8;
+}
+
+/* DETALHES */
+.pix-details {
+    border-top: 1px solid #334155;
+    padding-top: 14px;   /* antes 14px */
+    display: flex;
+    flex-direction: column;
+    gap: 3px;            /* antes 6px */
+}
+
+
+.pix-details p {
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0;           /* ⬅️ ISSO resolve de vez */
+}
+
+.pix-details p + p {
+    margin-top: 2px;
+}
+
+
+.pix-details strong {
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+
+/* AÇÕES */
+.pix-actions {
+    padding: 0 20px 30px;
+}
+
+
+.pix-info {
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+    color: #cbd5f5; /* cinza azulado confiável */
+    line-height: 1.4;
+}
+
+
+.copy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ⬅️ CENTRALIZA ÍCONE + TEXTO */
+    gap: 8px;
+
+    width: 100%;
+    background-color: #38bdf8;
+    color: #020617;
+    border: none;
+    border-radius: 14px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.copy-btn:active {
+    transform: scale(0.97);
+}
+
+/* QR CODE */
+.qr-box {
+    margin-top: 20px;
+    background-color: #1e293b;
+    padding: 16px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.qr-box p {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+
+canvas {
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+}
