@@ -47,7 +47,8 @@ document.querySelectorAll(".pay-btn").forEach(btn => {
 
 /* BOTÃO VOLTAR */
 document.getElementById("btnVoltar").addEventListener("click", () => {
-    window.location.href = "dashboard-inquilino.html";
+    window.location.href = "index.html";
 });
+
 
 
