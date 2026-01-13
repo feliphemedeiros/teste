@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/perfil-inquilino.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER PADRÃO -->
+    <header class="app-header">
+        <button class="back-btn" id="btnVoltar" aria-label="Voltar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <h1 class="header-title">Meu perfil</h1>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+
+        <!-- CARD PERFIL -->
+        <div class="profile-card">
+            <div class="avatar">
+                <span>JS</span>
+            </div>
+
+            <div class="profile-info">
+                <h2>João da Silva</h2>
+                <p>joao@email.com</p>
+                <p class="cpf">CPF: ***.***.***-**</p>
+            </div>
+        </div>
+
+        <!-- DADOS -->
+        <div class="info-card">
+            <p><strong>Imóvel atual:</strong> Rua das Flores,154 Apto 02</p>
+            <p><strong>Contrato:</strong> 1509</p>
+            <p><strong>Status:</strong> Contrato ativo</p>
+        </div>
+
+        <!-- BOTÃO SAIR -->
+        <button class="logout-btn" id="btnSair">
+            Sair da conta
+        </button>
+
+        <!-- SOBRE -->
+        <button class="about-btn" id="btnSobre">
+            Sobre o sistema
+        </button>
+
+    </main>
+
+</div>
+
+<script src="/js/perfil-inquilino.js"></script>
+</body>
+</html>

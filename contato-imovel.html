@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato do imóvel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contato-imovel.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER PADRÃO -->
+    <header class="app-header">
+        <button class="back-btn" id="btnVoltar" aria-label="Voltar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18l-6-6 6-6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <h1 class="header-title">Contato do imóvel</h1>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="content">
+
+        <!-- CARD RESPONSÁVEL -->
+        <div class="info-card">
+            <h2>Responsável pelo imóvel</h2>
+            <p class="name">Imobiliária Exemplo LTDA</p>
+            <p class="role">Administração do imóvel</p>
+        </div>
+
+        <!-- BOTÃO WHATSAPP -->
+    <a class="whatsapp-btn"
+   href="https://wa.me/5511999999999?text=Olá,%20estou%20entrando%20em%20contato%20sobre%20o%20imóvel."
+   target="_blank"
+   rel="noopener">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 2C8.268 2 2 8.268 2 16c0 2.82.84 5.45 2.29 7.67L2 30l6.54-2.23A13.93 13.93 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.41 0-4.65-.7-6.54-1.9l-.47-.29-3.88 1.32 1.29-3.78-.31-.49A11.44 11.44 0 014.5 16C4.5 9.65 9.65 4.5 16 4.5S27.5 9.65 27.5 16 22.35 27.5 16 27.5zm6.32-8.46c-.35-.17-2.07-1.02-2.39-1.13-.32-.12-.55-.17-.78.17-.23.35-.9 1.13-1.1 1.36-.2.23-.4.26-.75.09-.35-.17-1.46-.54-2.78-1.72-1.03-.92-1.73-2.06-1.93-2.4-.2-.35-.02-.54.15-.71.15-.15.35-.4.52-.6.17-.2.23-.35.35-.58.12-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.57-.28-.68-.57-.59-.78-.6l-.66-.01c-.23 0-.6.09-.92.43-.32.35-1.21 1.18-1.21 2.88s1.24 3.35 1.41 3.58c.17.23 2.44 3.73 5.92 5.23.83.36 1.47.57 1.97.73.83.26 1.59.22 2.19.13.67-.1 2.07-.85 2.36-1.67.29-.83.29-1.54.2-1.67-.09-.13-.32-.2-.66-.37z"/>
+    </svg>
+
+    <span>Falar pelo WhatsApp</span>
+</a>
+
+
+        <!-- INFORMAÇÃO -->
+        <p class="info-text">
+            Este contato é exclusivo para assuntos relacionados ao imóvel.
+        </p>
+
+    </main>
+
+</div>
+
+<script>
+    document.getElementById("btnVoltar").addEventListener("click", () => {
+        if (history.length > 1) {
+            history.back();
+        } else {
+            window.location.href = "dashboard-inquilino.html";
+        }
+    });
+</script>
+
+</body>
+</html>
