@@ -47,7 +47,8 @@ QRCode.toCanvas(
     document.getElementById("qrcode"),
     pixCode.trim(),
     {
-        width: 200,
+        width: 20,
         margin: 2
     }
 );
+
